@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "teacher.lee",
+      "password": "teach123",
+      "role": "staff",
+      "email": "teacher.lee@mergington.edu"
+    },
+    {
+      "username": "coach.ramos",
+      "password": "coach123",
+      "role": "staff",
+      "email": "coach.ramos@mergington.edu"
+    },
+    {
+      "username": "emma.student",
+      "password": "student123",
+      "role": "student",
+      "email": "emma@mergington.edu"
+    },
+    {
+      "username": "noah.student",
+      "password": "student123",
+      "role": "student",
+      "email": "noah@mergington.edu"
+    }
+  ]
+}
