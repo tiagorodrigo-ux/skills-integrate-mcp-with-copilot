@@ -8,8 +8,25 @@
   </head>
   <body>
     <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
+      <div class="header-row">
+        <div>
+          <h1>Mergington High School</h1>
+          <h2>Extracurricular Activities</h2>
+        </div>
+
+        <div id="auth-panel">
+          <form id="login-form">
+            <input id="username" type="text" placeholder="Username" required />
+            <input id="password" type="password" placeholder="Password" required />
+            <button type="submit">Log In</button>
+          </form>
+
+          <div id="user-session" class="hidden">
+            <p id="session-text"></p>
+            <button id="logout-btn" type="button">Log Out</button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -23,6 +40,9 @@
 
       <section id="signup-container">
         <h3>Sign Up for an Activity</h3>
+        <p id="access-note" class="info-note">
+          Sign in to register. Students can only manage their own registration.
+        </p>
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
@@ -37,6 +57,9 @@
           </div>
           <button type="submit">Sign Up</button>
         </form>
+        <p class="demo-users">
+          Demo users: teacher.lee / teach123, coach.ramos / coach123, emma.student / student123, noah.student / student123
+        </p>
         <div id="message" class="hidden"></div>
       </section>
     </main>

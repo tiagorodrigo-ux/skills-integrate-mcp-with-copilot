@@ -24,6 +24,59 @@ header {
   border-radius: 5px;
 }
 
+.header-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+#auth-panel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#login-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+#login-form input {
+  border: 1px solid #d0d6ff;
+  border-radius: 4px;
+  padding: 8px;
+  min-width: 150px;
+}
+
+#login-form button,
+#logout-btn {
+  background-color: #ffffff;
+  color: #1a237e;
+  border: 1px solid #ffffff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-form button:hover,
+#logout-btn:hover {
+  background-color: #e8ebff;
+}
+
+#session-text {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+#user-session {
+  text-align: right;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -55,6 +108,17 @@ section h3 {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
   color: #1a237e;
+}
+
+.info-note {
+  margin-bottom: 15px;
+  color: #334155;
+}
+
+.demo-users {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #555;
 }
 
 .activity-card {
@@ -197,4 +261,21 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .header-row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #auth-panel,
+  #user-session {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #login-form {
+    justify-content: center;
+  }
 }
